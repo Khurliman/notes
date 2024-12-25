@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page {
+    padding: 16px;
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 6px;
+    min-width: 80px;
+    font-size: 14px;
+}
+
+.btn-md {
+    padding: 6px;
+    min-width: auto;
+    font-size: 12px;
+    height: 28px;
+}
+
+.btn-blue {
+    background: blue;
+    color: #fff;
+}
+
+.btn-dark {
+    background: #111;
+    color: #fff;
+}
+
+.btn-white {
+    border: 1px solid #111;
+}
+
+.note__checkbox {
+    margin: 0;
+}
+
+.note__checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.note__checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.note__checkbox-custom {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #111;
+    border-radius: 2px;
+    position: relative;
+    transition: .2s;
+}
+
+.note__checkbox input[type="checkbox"]:checked + .note__checkbox-custom {
+    background-color: #111;
+}
+
+.note__checkbox input[type="checkbox"]:checked + .note__checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
